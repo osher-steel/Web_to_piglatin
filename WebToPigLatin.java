@@ -48,7 +48,7 @@ public class WebToPigLatin {
 							tempBw.write(intRead);
 							intRead = br.read();
 						}
-						while ((isVowel((char) intRead) == false)) // Loop that gets all the successive consonants at										// the
+						while ((isVowel((char) intRead) == false)) // Loop that gets all the successive consonants at
 						{ 					   //the beginning of the word
 							tempBw.write(intRead); // Prints them in a temporary file
 							intRead = br.read();
@@ -56,8 +56,7 @@ public class WebToPigLatin {
 						tempBw.write(' ');
 						tempBw.close();
 					}
-					tempRead = writeWord(br, bw, intRead, firstLetter, upperCase);// Function that prints the word to
-																					// the output file
+					tempRead = writeWord(br, bw, intRead, firstLetter, upperCase);// Function that prints the word to the output file
 
 				} else if (intRead != -1) // As long as it it is not the end of the file, print char
 				{
